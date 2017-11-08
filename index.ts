@@ -7,7 +7,7 @@ function isLoaded(): boolean {
 function dojoPromise(modules: string[]): Promise<any> {
     return new Promise((resolve, reject) => {
         // If something goes wrong loading the esri/dojo scripts, reject with the error.
-        window['require'].on('error', reject);
+        //window['require'].on('error', reject);
         window['require'](modules, (...args) => {
             // Resolve with the parameters from dojo require as an array.
             resolve(args);
