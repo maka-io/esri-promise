@@ -7,7 +7,7 @@ function isLoaded() {
 function dojoPromise(modules) {
     return new es6_promise_1.Promise(function (resolve, reject) {
         // If something goes wrong loading the esri/dojo scripts, reject with the error.
-        window['require'].on('error', reject);
+        //window['require'].on('error', reject);
         window['require'](modules, function () {
             var args = [];
             for (var _i = 0; _i < arguments.length; _i++) {
